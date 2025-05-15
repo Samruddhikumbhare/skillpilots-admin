@@ -1,0 +1,45 @@
+import Grid from "@mui/material/Grid";
+import Card from "@mui/material/Card";
+import MDBox from "components/MDBox";
+import axios from "axios";
+import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
+import DashboardNavbar from "examples/Navbars/DashboardNavbar";
+import Footer from "examples/Footer";
+import OnlineTestPage from "components/OnlineTestPage/CreateOnlineTestForm";
+import OnlineTestList from "components/OnlineTestPage/OnlineTestList";
+import { useState } from "react";
+
+function OnlineTest() {
+  const [searchString, setsearchString] = useState("");
+  const handleChange = (data) => {
+    setsearchString(data);
+  };
+
+  return (
+    <DashboardLayout>
+      <DashboardNavbar onDataSend={handleChange} />
+      <MDBox pt={6} pb={3}>
+        <Grid container spacing={6}>
+          <Grid item xs={12}>
+            <Card>
+              <OnlineTestPage />
+            </Card>
+          </Grid>
+        </Grid>
+      </MDBox>
+      <MDBox pt={3} pb={3}>
+        <Grid container spacing={6}>
+          <Grid item xs={12}>
+            <Card sx={{ p: 1, pt: 2 }}>
+              <OnlineTestList searchString={searchString} />
+            </Card>
+          </Grid>
+        </Grid>
+      </MDBox>
+
+      <Footer />
+    </DashboardLayout>
+  );
+}
+
+export default OnlineTest;

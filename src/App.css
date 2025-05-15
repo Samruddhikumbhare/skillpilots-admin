@@ -1,0 +1,31 @@
+.sessionFeedback .MuiRadio-root,
+.sessionFeedback .MuiCheckbox-root {
+  padding: 0 !important;
+}
+
+.sessionFeedback .MuiSvgIcon-root {
+  width: 15px !important;
+  height: 15px !important;
+}
+
+.sessionFeedback .MuiFormControlLabel-root {
+  padding-left: 20px !important;
+  height: 10px !important;
+}
+
+.sessionFeedback .MuiTypography-root {
+  font-size: 12px !important;
+}
+
+.sessionFeedback .MuiTextField-root {
+  margin: 5px 0 0 10px !important;
+}
+
+.MuiDataGrid-root .MuiDataGrid-cell,
+.MuiDataGrid-columnHeaderTitle {
+  font-size: 13px !important;
+}
+
+.swal2-container {
+  z-index: 1000000000000000 !important;
+}

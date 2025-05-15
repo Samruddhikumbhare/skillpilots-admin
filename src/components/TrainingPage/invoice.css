@@ -1,0 +1,31 @@
+#sign {
+    background-image: url("assets/images/p.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%; /* Increase the size of the background image */
+    flex-direction: column;
+    justify-content: right;
+    align-items: end;
+    display: flex;
+    position: relative;
+  top: 90px;
+    left: 60%;
+    width: 20rem;  /* Increase width */
+    height: 20rem; /* Increase height */
+  }
+#logo {
+    background-image: url("assets/images/bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%; /* Increase the size of the background image */
+    flex-direction: column;
+    justify-content: right;
+    align-items: end;
+    display: flex;
+    position: absolute;
+  top: 5px;
+    left: 70%;
+    width: 12rem;  /* Increase width */
+    height: 12rem; /* Increase height */
+  }
+  
